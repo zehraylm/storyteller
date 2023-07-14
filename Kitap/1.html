@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitap Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .page {
+            position: relative;
+            width: 900px;
+            height: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+        }
+
+        .page-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+
+        .text {
+            text-align: center;
+            font-family: "Bradley Hand ", cursive;
+            font-size: 20px;
+        }
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .arrow-left {
+            left: -30px;
+        }
+
+        .arrow-right {
+            right: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="arrow arrow-left" onclick="goToPreviousPage()">&larr;</div>
+        <div class="arrow arrow-right" onclick="goToNextPage()">&rarr;</div>
+        <div class="page-content">
+            <div class="text">
+                <p>
+                    Once upon a time, in a small village nestled in a lush green valley, there lived a young girl named Lily. Lily had a heart full of curiosity and a mind brimming with imagination. She would spend her days exploring the enchanting woods surrounding the village, often getting lost in the world of fairy tales and magical creatures.
+                </p>
+            </div>
+            <div class="image">
+                <img src="1-4.png" alt="Resim">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToPreviousPage() {
+            // Önceki sayfaya yönlendirme yapmak için window.location.href kullanılır
+            window.location.href = '0.html';
+        }
+
+        function goToNextPage() {
+            // Sonraki sayfaya yönlendirme yapmak için window.location.href kullanılır
+            window.location.href = '2.html';
+        }
+    </script>
+</body>
+</html>

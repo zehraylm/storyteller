@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitap Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Bradley Hand ", cursive;
+        }
+
+        .page {
+            position: relative;
+            width: 900px;
+            height: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+        }
+
+        .page-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .arrow-left {
+            left: -30px;
+        }
+
+        .arrow-right {
+            right: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="arrow arrow-left" onclick="goToPreviousPage()">&larr;</div>
+        <div class="arrow arrow-right" onclick="goToNextPage()">&rarr;</div>
+        <div class="page-content">
+            <div class="image">
+                <img src="8-4.png" alt="Resim">
+            </div>
+            <div class="text">
+                <p>
+                    As if by magic, Lily found herself back in her village, the golden bird's song still resonating in her ears. The village flourished, and its people lived in harmony, touched by the magic of Lily's adventure. From that day forward, Lily shared her tales with others, inspiring them to embark on their own journeys of discovery and spreading the magic of hope and imagination throughout the land.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToPreviousPage() {
+            // Önceki sayfaya yönlendirme yapmak için window.location.href kullanılır
+            window.location.href = '7.html';
+        }
+
+        function goToNextPage() {
+            // Sonraki sayfaya yönlendirme yapmak için window.location.href kullanılır
+            window.location.href = '9.html';
+        }
+    </script>
+</body>
+</html>
