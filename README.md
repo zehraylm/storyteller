@@ -15,12 +15,14 @@ Hikaye özet promptu + Stil promptları + diğer pozitif promptlar
 şeklinde resim çıktısı için olan promptu oluşturmuş oluyoruz.
 
 Şimdiye kadar genellikle kullandığım ek promptlar şu şekilde:
+
 "Özet Prompt" + beautifull eyes, perfect face, intricate, elegant, highly detailed, digital painting, artstation, concept art, sharp focus, illustration, by justin gerard and artgerm, 8 k, centered,
 
 Negatif Prompt için ise:
+
 deformed, ugly, mutilated, disfigured, text, extra limbs, face cut, head cut, extra fingers, extra arms, poorly drawn face, mutation, bad proportions, cropped head, malformed limbs, mutated hands, fused fingers, long neck, deformed face,
 şeklinde promptlar kullanıyorum.
 
 ## Sonuç 
 Oluşturulan resim ve paragraflar page.html dosyasındaki alanlara yerleştiriliyor ve hikaye kitabı web arayüzünde görüntülemeye hazır hale geliyor.
-
+Şimdiki halinde otomatik olarak kitap oluşturulamamaktadır. Chatgpt ve StableDiffusion kullanılarak bu adımlar izlendiği takdirde örnekteki gibi çıktılar elde edilebilmektedir.  
