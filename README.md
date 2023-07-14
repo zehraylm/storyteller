@@ -21,3 +21,6 @@ Negatif Prompt için ise:
 deformed, ugly, mutilated, disfigured, text, extra limbs, face cut, head cut, extra fingers, extra arms, poorly drawn face, mutation, bad proportions, cropped head, malformed limbs, mutated hands, fused fingers, long neck, deformed face,
 şeklinde promptlar kullanıyorum.
 
+## Sonuç 
+Oluşturulan resim ve paragraflar page.html dosyasındaki alanlara yerleştiriliyor ve hikaye kitabı web arayüzünde görüntülemeye hazır hale geliyor.
+
